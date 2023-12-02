@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nest App</title>
+</head>
+
+<body>
+    <header>
+        Buttons for testing
+    </header>
+    <main>
+        <form method="post" action="/api/post">
+            <input type="text" name="postField" />
+            <button type="submit">POST</button>
+        </form>
+        <br />
+        <form method="post" action="/api/delete">
+            <input type="text" name="deleteField" />
+            <button type="submit">DELETE</button>
+        </form>
+        <br />
+        <form method="post" action="/api/put">
+            <input type="text" name="updateFieldOldId" placeholder="old id..."/>
+            <input type="text" name="updateFieldNewId" placeholder="new id..." />
+            <button type="submit">PUT</button>
+        </form>
+        <br/>
+        <label id="results">Results here</label>
+    </main>
+</body>
+
+</html>
