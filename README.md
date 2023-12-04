@@ -35,3 +35,15 @@ THE MOST ALLOCATED TIME FOR: solving problems with inserting data into table (no
 RESULT: done migration, entity, TypeOrmModuleOptions
 
 ## (see: db-queries-app branch)
+
+-----------------------------------------------------------------------------
+
+## 4TH DAY
+
+TIME SPENT: 1 HOUR
+
+THE MOST ALLOCATED TIME FOR: solving problems with inserting data into table (solved!)
+
+RESULT: working service and controller that can insert input data and search entities by name
+
+## (see: db-queries-app branch)
