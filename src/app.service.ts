@@ -1,26 +1,32 @@
 import { Injectable } from "@nestjs/common";
 import { MySqlDataSource } from "./datasource";
+import { Repository } from "typeorm";
 import { TestEntity } from "./entities/test.entity";
+import { InjectRepository } from "@nestjs/typeorm";
 
-@Injectable()y
+@Injectable()
 export class AppService {
-  getHello(): string {
-    return "Hello World!";
+  constructor(
+    @InjectRepository(TestEntity)
+    private testsRepository: Repository<TestEntity>,
+  ) {}
+
+  async insertIntoMySQL(name: string, age: string): Promise<void> {
+    await this.testsRepository.insert({ name, age: parseInt(age) });
   }
 
-  insertIntoMySQL(name: string, age: string): void {
-    console.log("started");
-
-    const testRepository = MySqlDataSource.getRepository(TestEntity)
-
-    testRepository
-    .createQueryBuilder()
-    .insert()
-    .into(TestEntity)
-    .values({
-      name: name, age: parseInt(age)
-    })
-
-    console.log("ended");
+  async getFromMySQL(name: string): Promise<TestEntity[]> {
+    const results: TestEntity[] = await this.testsRepository.find({
+      select: {
+        id: true,
+        name: true,
+        age: true,
+      },
+      where: {
+        name,
+      },
+    });
+    console.log(results);
+    return results;
   }
 }

@@ -12,8 +12,15 @@ export class AppController {
   }
 
   @Post()
-  insertIntoMySQL(@Req() req: Request) {
+  async insertIntoMySQL(@Req() req: Request, @Res() res: Response) {
     const {nameField, ageField} = req.body
-    this.appService.insertIntoMySQL(nameField, ageField)
+    await this.appService.insertIntoMySQL(nameField, ageField)
+    res.redirect("/")
+  }
+
+  @Post("entities")
+  async getFromMySQL(@Req() req: Request, @Res() res: Response) {
+    const {name} = req.body
+    res.json(await this.appService.getFromMySQL(name))
   }
 }
