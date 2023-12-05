@@ -11,16 +11,29 @@ export class AppController {
     res.sendFile("index.html", { root: "src/public" });
   }
 
-  @Post()
+  @Post("entities/insert")
   async insertIntoMySQL(@Req() req: Request, @Res() res: Response) {
-    const {nameField, ageField} = req.body
-    await this.appService.insertIntoMySQL(nameField, ageField)
-    res.redirect("/")
+    const { nameField, ageField } = req.body;
+    await this.appService.insertIntoMySQL(nameField, ageField);
+    res.redirect("/");
+  }
+
+  @Post("/entities/update")
+  async updateInMySQL(@Req() req: Request, @Res() res: Response) {
+    const { id, name, age } = req.body;
+    await this.appService.updateInMySQL(id, name, age);
+    res.redirect("/");
   }
 
   @Post("entities")
   async getFromMySQL(@Req() req: Request, @Res() res: Response) {
-    const {name} = req.body
-    res.json(await this.appService.getFromMySQL(name))
+    const { name } = req.body;
+    res.json(await this.appService.getFromMySQL(name));
+  }
+
+  @Post("entities/delete")
+  async deleteFromMySQL(@Req() req: Request, @Res() res: Response) {
+    const { id } = req.body;
+    res.json(await this.appService.deleteFromMySQL(id));
   }
 }

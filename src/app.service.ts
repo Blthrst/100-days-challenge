@@ -1,5 +1,4 @@
 import { Injectable } from "@nestjs/common";
-import { MySqlDataSource } from "./datasource";
 import { Repository } from "typeorm";
 import { TestEntity } from "./entities/test.entity";
 import { InjectRepository } from "@nestjs/typeorm";
@@ -26,7 +25,23 @@ export class AppService {
         name,
       },
     });
-    console.log(results);
     return results;
+  }
+
+  async updateInMySQL(id: string, name: string, age: string) {
+    this.testsRepository
+      .createQueryBuilder()
+      .update(TestEntity)
+      .set({ name, age: parseInt(age) })
+      .where("id = :id", { id })
+      .execute();
+  }
+
+  async deleteFromMySQL(id: string) {
+    this.testsRepository
+      .createQueryBuilder()
+      .delete()
+      .where("id = :id", { id })
+      .execute();
   }
 }

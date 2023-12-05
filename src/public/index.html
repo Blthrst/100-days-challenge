@@ -8,7 +8,7 @@
 <body>
     <main>
         <label>insert entity</label>
-        <form method="post" action="/">
+        <form method="post" action="/entities/insert">
             <input type="text" name="nameField" placeholder="Type name here..."/>
             <input type="text" name="ageField" placeholder="Type age here..."/>
             <button type="submit">Submit</button>
@@ -17,6 +17,20 @@
         <label>Find entities</label>
         <form method="post" action="/entities">
             <input type="text" name="name" placeholder="Type name here..." />
+            <button type="submit">Submit</button>
+        </form>
+        <br/>
+        <label>Change entity</label>
+        <form method="post" action="/entities/update">
+            <input type="text" name="id" placeholder="Type id here..." />
+            <input type="text" name="name" placeholder="Type name here..." />
+            <input type="text" name="age" placeholder="Type age here..." />
+            <button type="submit">Submit</button>
+        </form>
+        <br />
+        <label>Delete entity</label>
+        <form method="post" action="/entities/delete">
+            <input type="text" name="id" placeholder="Type id here..." />
             <button type="submit">Submit</button>
         </form>
     </main>
