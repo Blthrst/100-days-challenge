@@ -59,3 +59,15 @@ THE MOST ALLOCATED TIME FOR: creating rest controllers and testing
 RESULT: done very simple fullstack app that aimed for interaction with one table 
 
 ## (see: db-queries-app branch)
+
+-----------------------------------------------------------------------------
+
+## 6TH DAY
+
+TIME SPENT: 1 HOUR
+
+THE MOST ALLOCATED TIME FOR: -
+
+RESULT: new module for database
+
+## (see: game-store branch)
