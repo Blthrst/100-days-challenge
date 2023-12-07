@@ -8,7 +8,7 @@ export const MySQLOptions: TypeOrmModuleOptions = {
   port: parseInt(process.env.MYSQL_PORT),
   username: process.env.MYSQL_USERNAME,
   password: process.env.MYSQL_PWD,
-  database: process.env.MYSQL_DBNAME,
+  database: process.env.MYSQL_NAME,
   entities: [join(__dirname, '*.entity.ts')],
   migrations: [join(__dirname, 'migrations', '*.{js,ts}')],
   migrationsRun: true,

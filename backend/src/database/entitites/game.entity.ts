@@ -6,6 +6,9 @@ export class Game {
     id: string
 
     @Column()
+    posterUrl: string
+
+    @Column()
     title: string
 
     @Column()
@@ -16,4 +19,7 @@ export class Game {
 
     @Column()
     price: number
+
+    @Column()
+    discount: number
 }
