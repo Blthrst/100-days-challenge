@@ -71,3 +71,15 @@ THE MOST ALLOCATED TIME FOR: -
 RESULT: new module for database
 
 ## (see: game-store branch)
+
+-----------------------------------------------------------------------------
+
+## 7TH DAY
+
+TIME SPENT: 1 HOUR
+
+THE MOST ALLOCATED TIME FOR: -
+
+RESULT: changes in app module
+
+## (see: game-store branch)
