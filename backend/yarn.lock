@@ -2134,7 +2134,11 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
+<<<<<<< HEAD
 dotenv@^16.0.3, dotenv@^16.3.1:
+=======
+dotenv@^16.0.3:
+>>>>>>> a977fa35868a5060791a69d57d2780f04150a2cf
   version "16.3.1"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.3.1.tgz#369034de7d7e5b120972693352a3bf112172cc3e"
   integrity sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==
@@ -3955,11 +3959,14 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
+<<<<<<< HEAD
 nest@^0.1.6:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/nest/-/nest-0.1.6.tgz#81aa0236f0ebc996523e5d3855c73dd382a2b255"
   integrity sha512-21378J/6pHB9EZMId5yz9DaxVj778pCHhzfXhRLLrLWZydpLgbsyxL5B5QyTSWJBk5L8XbiGgMvNZMb/qBySYg==
 
+=======
+>>>>>>> a977fa35868a5060791a69d57d2780f04150a2cf
 node-abort-controller@^3.0.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/node-abort-controller/-/node-abort-controller-3.1.1.tgz#a94377e964a9a37ac3976d848cb5c765833b8548"

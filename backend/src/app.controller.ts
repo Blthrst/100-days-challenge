@@ -9,5 +9,5 @@ export class AppController {
   @Get()
   page() {
     return "hello world";
-  }
+}
 }
