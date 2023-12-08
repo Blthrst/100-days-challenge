@@ -83,3 +83,15 @@ THE MOST ALLOCATED TIME FOR: -
 RESULT: changes in app module
 
 ## (see: game-store branch)
+
+-----------------------------------------------------------------------------
+
+## 8TH DAY
+
+TIME SPENT: 1 HOUR
+
+THE MOST ALLOCATED TIME FOR: refactoring
+
+RESULT: game module instead of database module
+
+## (see: game-store branch)
