@@ -95,3 +95,16 @@ THE MOST ALLOCATED TIME FOR: refactoring
 RESULT: game module instead of database module
 
 ## (see: game-store branch)
+
+-----------------------------------------------------------------------------
+
+## 9TH DAY
+
+TIME SPENT: 1 HOUR
+
+THE MOST ALLOCATED TIME FOR: -
+
+RESULT: header component
+
+## (see: game-store branch)
+
