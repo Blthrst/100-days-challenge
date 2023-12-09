@@ -8,7 +8,9 @@ export class GameController {
   constructor(private gameService: GameService) {}
 
   @Get("games")
-  getGames() {}
+  async getGames(@Res() res: Response) {
+    res.json(await this.gameService.getGames());
+  }
 
   @Post("addgame")
   async createGame(@Req() req: Request, @Res() res: Response) {
@@ -17,6 +19,24 @@ export class GameController {
 
     res.json(
       await this.gameService.insertGame(
+        posterUrl,
+        title,
+        description,
+        releaseDate,
+        price,
+        discount,
+      ),
+    );
+  }
+
+  @Post("updategame")
+  async updateGame(@Req() req: Request, @Res() res: Response) {
+    const { id, posterUrl, title, description, releaseDate, price, discount } =
+      req.body;
+
+    res.json(
+      await this.gameService.updateGame(
+        id,
         posterUrl,
         title,
         description,

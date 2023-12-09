@@ -7,6 +7,10 @@ interface isAdded {
   isAdded: boolean;
 }
 
+interface isUpdated {
+  isUpdated: boolean;
+}
+
 @Injectable()
 export class GameService {
   constructor(
@@ -36,5 +40,29 @@ export class GameService {
 
   async getGames(): Promise<Game[]> {
     return this.gameRepository.find();
+  }
+
+  async updateGame(
+    id: string,
+    posterUrl: string,
+    title: string,
+    description: string,
+    releaseDate: string,
+    price: number,
+    discount: number,
+  ): Promise<isUpdated> {
+    const foundGame = await this.gameRepository.findOneBy({ id });
+    if (foundGame != null) {
+      foundGame.posterUrl = posterUrl;
+      foundGame.description = description;
+      foundGame.title = title;
+      foundGame.releaseDate = releaseDate;
+      foundGame.price = price;
+      foundGame.discount = discount;
+
+      this.gameRepository.save(foundGame);
+
+      return { isUpdated: true };
+    } else return { isUpdated: false };
   }
 }
