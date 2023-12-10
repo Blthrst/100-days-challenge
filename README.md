@@ -108,3 +108,15 @@ RESULT: header component
 
 ## (see: game-store branch)
 
+-----------------------------------------------------------------------------
+
+## 10TH DAY
+
+TIME SPENT: 1 HOUR
+
+THE MOST ALLOCATED TIME FOR: justifying content -_-
+
+RESULT: none result...
+
+## (see: game-store branch)
+
