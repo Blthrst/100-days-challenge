@@ -1,4 +1,77 @@
+.header-body {
+    margin: 40px;
+    margin-top: 60px;
+}
+
+header {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    margin: none;
+}
+
+nav {
+    display: flexbox;
+    max-width: 250px;
+    margin: none;
+}
+
+h1 {
+    margin-left: 250px;
+}
+
+img {
+    max-width: 25px;
+    max-height: 25px;
+    margin: none;
+    justify-self: center;
+}
+
 #logo {
-    width: 100px;
-    height: 100px;
+    max-width: 200px;
+    max-height: 100px;
+    height: inherit;
+    justify-self: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navigation-ul {
+    display: flex;
+    height: 40px;
+    max-width: 150px;
+    padding: 10px;
+}
+
+.nav-block {
+    display: flex;
+    gap: 40px;
+}
+
+.search-bar {
+    display: flex;
+    margin: none;
+    vertical-align: center;
+}
+
+.search-title-bar {
+    justify-content: center;
+    justify-self: center
+}
+
+.cart-exit-div {
+    position: absolute;
+    right: 10%;
+}
+
+.cart-exit {
+    gap: 20px;
 }
