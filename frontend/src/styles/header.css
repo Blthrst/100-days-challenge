@@ -1,77 +1,95 @@
 .header-body {
-    margin: 40px;
-    margin-top: 60px;
+  margin: 40px;
+  margin-top: 60px;
 }
 
 header {
-    margin-left: 5%;
-    margin-right: 5%;
-    display: flex;
-    margin: none;
+  margin: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
 }
 
 nav {
-    display: flexbox;
-    max-width: 250px;
-    margin: none;
+  display: flexbox;
+  max-width: 250px;
+  margin: 0;
 }
 
 h1 {
-    margin-left: 250px;
+  margin-left: 250px;
+  align-self: center;
 }
 
 img {
-    max-width: 25px;
-    max-height: 25px;
-    margin: none;
-    justify-self: center;
+  max-width: 25px;
+  max-height: 25px;
+  margin: none;
+  justify-self: center;
 }
 
 #logo {
-    max-width: 200px;
-    max-height: 100px;
-    height: inherit;
-    justify-self: center;
+  max-width: 200px;
+  max-height: 100px;
+  height: inherit;
+  justify-self: center;
 }
 
 .main {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 ul {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 .navigation-ul {
-    display: flex;
-    height: 40px;
-    max-width: 150px;
-    padding: 10px;
+  display: flex;
+  height: 40px;
+  max-width: 150px;
+  padding: 10px;
 }
 
 .nav-block {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
+  margin-right: 30px;
 }
 
 .search-bar {
-    display: flex;
-    margin: none;
-    vertical-align: center;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  max-height: 30px;
+  background-color: antiquewhite;
+  padding: 3px;
 }
 
-.search-title-bar {
-    justify-content: center;
-    justify-self: center
+li {
+  justify-content: center;
+  align-self: center;
+}
+
+#search-icon {
+  justify-self: center;
+  vertical-align: bottom;
+}
+
+input {
+  max-height: 30px;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
 }
 
 .cart-exit-div {
-    position: absolute;
-    right: 10%;
+  margin-left: 80px;
 }
 
 .cart-exit {
-    gap: 20px;
+  gap: 20px;
 }
