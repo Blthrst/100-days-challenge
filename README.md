@@ -102,7 +102,7 @@ RESULT: game module instead of database module
 
 TIME SPENT: 1 HOUR
 
-THE MOST ALLOCATED TIME FOR: -
+THE MOST ALLOCATED TIME FOR: frontend
 
 RESULT: header component
 
@@ -129,6 +129,18 @@ TIME SPENT: 1 HOUR
 THE MOST ALLOCATED TIME FOR: I hate frontend
 
 RESULT: none result.........................
+
+## (see: game-store branch)
+
+-----------------------------------------------------------------------------
+
+## 12TH DAY
+
+TIME SPENT: 1 HOUR
+
+THE MOST ALLOCATED TIME FOR: frontend
+
+RESULT: looks more pretty with styles
 
 ## (see: game-store branch)
 
