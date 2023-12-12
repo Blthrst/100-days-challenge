@@ -1,0 +1,15 @@
+.hot-div {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 100px, 50px, 10px, 5px;
+    background-color: #2f2850;
+}
+
+.top-nav, .top-nav-texts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav-texts {
+    width: 350px;
+}
