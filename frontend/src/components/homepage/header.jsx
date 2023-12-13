@@ -35,8 +35,10 @@ export function Header() {
                   <Link to="/help">Помощь</Link>
                 </li>
               </div>
-              <div className="search-bar">
+              <div class="container">
                 <h3>Поиск</h3>
+              </div>
+              <div className="search-bar">
                 <input type="text" />
                 <img
                   src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._RTO9yp1xH5aQA0vS7fpHAHaHW%26pid%3DApi&f=1&ipt=0d54efe2a6bbc9c14d5f41140a0b76d6d694f251838ff4e92d403c31af00a2aa&ipo=images"

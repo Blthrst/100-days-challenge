@@ -59,12 +59,22 @@ ul {
 }
 
 .search-bar {
+  gap: 10px;
   display: flex;
   margin: 0;
   justify-content: center;
-  max-height: 30px;
-  background-color: antiquewhite;
-  padding: 3px;
+  max-height: 40px;
+  max-width: 280px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.search-bar>input {
+  border: none;
+}
+
+.search-bar>input:focus {
+  outline: none;
 }
 
 li {
@@ -74,16 +84,34 @@ li {
 
 #search-icon {
   justify-self: center;
-  vertical-align: bottom;
+  margin-right: 10px;
+}
+
+#search-icon:hover {
+  cursor: pointer;
 }
 
 input {
   max-height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 20px;
+  background: rgb(185, 185, 185);
+  margin: 0;
+  padding: 10px;
+  color: black;
+  font-weight: semibold;
+  font-size: 14px;
 }
 
 h3 {
   margin: 0;
-  padding: 0;
 }
 
 .cart-exit-div {
