@@ -144,3 +144,15 @@ RESULT: looks more pretty with styles
 
 ## (see: game-store branch)
 
+-----------------------------------------------------------------------------
+
+## 13TH DAY
+
+TIME SPENT: 1 HOUR
+
+THE MOST ALLOCATED TIME FOR: frontend
+
+RESULT: small changes
+
+## (see: game-store branch)
+
