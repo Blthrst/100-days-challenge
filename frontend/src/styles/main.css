@@ -8,12 +8,12 @@ img {
 }
 
 .latest-offers {
-    justify-self: center;
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(3, 200px);
     grid-template-rows: (3, auto);
     gap: 0;
+    margin-right: 40px;
     margin-bottom: 50px;
     padding: 5px;
 }
@@ -45,14 +45,9 @@ img:hover {
     animation-iteration-count: 1;
 }
 
-#bottom-small-poster, #top-small-poster {
+#poster {
     height: 100%;
-    grid-row-start: 2;
-    grid-column-start: 3;
-}
-
-#bottom-small-poster {
-    grid-row-start: 3;
+    max-height: 100%;
 }
 
 #latest-offers-text {

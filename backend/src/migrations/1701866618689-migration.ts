@@ -24,7 +24,7 @@ export class Migration1701866618689 implements MigrationInterface {
           },
           {
             name: 'description',
-            type: 'varchar(500)',
+            type: 'text',
             isNullable: false,
           },
           {
@@ -48,6 +48,6 @@ export class Migration1701866618689 implements MigrationInterface {
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
-    await queryRunner.dropTable("games")
+    await queryRunner.dropTable("game")
   }
 }

@@ -35,7 +35,7 @@ export function Header() {
                   <Link to="/help">Помощь</Link>
                 </li>
               </div>
-              <div class="container">
+              <div className="container">
                 <h3>Поиск</h3>
               </div>
               <div className="search-bar">

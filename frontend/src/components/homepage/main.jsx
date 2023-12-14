@@ -1,8 +1,25 @@
 import React from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/main.css";
 
 export function Main() {
+  const [latestOffers, setLatestOffers] = useState([]);
+
+  useEffect(() => {
+    async function getLatestOffers() {
+      const res = await axios.get("http://localhost:3030/games");
+      return res;
+    }
+    getLatestOffers().then((res) => {
+      setLatestOffers(res.data);
+      console.log(res.data);
+    });
+
+    console.log(latestOffers);
+  }, []);
+
   return (
     <main>
       <br />
@@ -14,12 +31,12 @@ export function Main() {
           alt="poster"
         />
         <img
-          id="top-small-poster"
+          id="poster"
           src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Y7R5dm0nkhahfz7LLP4owgHaJY%26pid%3DApi&f=1&ipt=27bed6e4c1f4ee4357c476f9a092562ba5a496719dbaac650785a19c0f3922ca&ipo=images"
           alt="poster"
         />
         <img
-          id="bottom-small-poster"
+          id="poster"
           src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.ULbwpKYLrju7BjD0GC8SxQHaFL%26pid%3DApi&f=1&ipt=e3a9324164c52f5cc830da013468f76533c6eb63e83f01ee045534858e285fc4&ipo=images"
           alt="poster"
         />
