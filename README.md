@@ -156,3 +156,15 @@ RESULT: small changes
 
 ## (see: game-store branch)
 
+-----------------------------------------------------------------------------
+
+## 14TH DAY
+
+TIME SPENT: 1 HOUR
+
+THE MOST ALLOCATED TIME FOR: -
+
+RESULT: first step to connect front & back
+
+## (see: game-store branch)
+
