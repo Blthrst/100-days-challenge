@@ -168,3 +168,15 @@ RESULT: first step to connect front & back
 
 ## (see: game-store branch)
 
+-----------------------------------------------------------------------------
+
+## 15TH DAY
+
+TIME SPENT: 1 HOUR
+
+THE MOST ALLOCATED TIME FOR: conditional rendering
+
+RESULT: RTFM
+
+## (see: game-store branch)
+
