@@ -7,32 +7,32 @@ import "../../styles/main.css";
 export function Main() {
   const [latestOffers, setLatestOffers] = useState([]);
 
-  useEffect(() => {
-    async function getLatestOffers() {
-      const res = await axios.get("http://localhost:3030/games");
-      return res;
-    }
-    getLatestOffers().then((res) => {
-      setLatestOffers(res.data);
-      console.log(res.data);
-    });
+   async function getLatestOffers() {
+     const res = await axios.get("http://localhost:3030/games");
+     setLatestOffers(res.data);
+   }
 
-    console.log(latestOffers);
+  useEffect(() => {
+    getLatestOffers();
   }, []);
 
-  return (
+
+  //const bigPoster = latestOffers[0]
+  //console.log(latestOffers)
+
+    if (latestOffers.length > 0) return (
     <main>
       <br />
       <div className="latest-offers">
         <h2 id="latest-offers-text">Последние предложения</h2>
         <img
           id="big-poster"
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.o7hH-XOdOGkzPqT9WM7vEQHaLH%26pid%3DApi&f=1&ipt=74c57a19d9ba63012db8957663f06c88d0ca62349c4a9cd8e5627b2728079904&ipo=images"
+          src={latestOffers[0].posterUrl}
           alt="poster"
         />
         <img
           id="poster"
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Y7R5dm0nkhahfz7LLP4owgHaJY%26pid%3DApi&f=1&ipt=27bed6e4c1f4ee4357c476f9a092562ba5a496719dbaac650785a19c0f3922ca&ipo=images"
+          src={latestOffers[1].posterUrl}
           alt="poster"
         />
         <img
@@ -42,5 +42,6 @@ export function Main() {
         />
       </div>
     </main>
-  );
+  )
+  else return (<h1>Error</h1>)
 }
