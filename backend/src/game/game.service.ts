@@ -23,6 +23,7 @@ export class GameService {
     description: string,
     releaseDate: string,
     price: number,
+    priceWithDiscount: number,
     discount: number,
   ): Promise<isAdded> {
     const insertResult: InsertResult = await this.gameRepository.insert({
@@ -31,6 +32,7 @@ export class GameService {
       description,
       releaseDate,
       price,
+      priceWithDiscount,
       discount,
     });
 
@@ -39,7 +41,14 @@ export class GameService {
   }
 
   async getGames(): Promise<Game[]> {
-    return this.gameRepository.find();
+    return await this.gameRepository.find();
+  }
+
+  async getGamesByDiscount(amount: number): Promise<Game[]> {
+    const games = await this.gameRepository.find();
+    const gamesSortedByDiscount = games.sort((a, b) => b.discount - a.discount);
+
+    return gamesSortedByDiscount.slice(0, amount)
   }
 
   async updateGame(
@@ -49,6 +58,7 @@ export class GameService {
     description: string,
     releaseDate: string,
     price: number,
+    priceWithDiscount: number,
     discount: number,
   ): Promise<isUpdated> {
     const foundGame = await this.gameRepository.findOneBy({ id });
@@ -58,6 +68,7 @@ export class GameService {
       foundGame.title = title;
       foundGame.releaseDate = releaseDate;
       foundGame.price = price;
+      foundGame.priceWithDiscount = priceWithDiscount;
       foundGame.discount = discount;
 
       this.gameRepository.save(foundGame);

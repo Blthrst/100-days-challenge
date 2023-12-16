@@ -38,6 +38,11 @@ export class Migration1701866618689 implements MigrationInterface {
             isNullable: false,
           },
           {
+            name: "priceWithDiscount",
+            type: "double",
+            isNullable: false
+          },
+          {
             name: 'discount',
             type: 'int',
             isNullable: false,

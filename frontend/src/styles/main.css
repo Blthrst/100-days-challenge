@@ -7,6 +7,10 @@ img {
     max-height: 100%;
 }
 
+figure {
+    display: inline-block;
+}
+
 .latest-offers {
     justify-content: center;
     display: grid;
