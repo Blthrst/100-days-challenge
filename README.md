@@ -180,3 +180,15 @@ RESULT: RTFM
 
 ## (see: game-store branch)
 
+-----------------------------------------------------------------------------
+
+## 16TH DAY
+
+TIME SPENT: 1 HOUR
+
+THE MOST ALLOCATED TIME FOR: -
+
+RESULT: done API for unfinished game store. Game store become very boring, I want to start something new.
+
+## (see: game-store branch)
+
