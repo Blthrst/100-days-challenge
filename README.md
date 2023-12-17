@@ -192,3 +192,15 @@ RESULT: done API for unfinished game store. Game store become very boring, I wan
 
 ## (see: game-store branch)
 
+-----------------------------------------------------------------------------
+
+## 17TH DAY
+
+TIME SPENT: 1 HOUR
+
+THE MOST ALLOCATED TIME FOR: -
+
+RESULT: -
+
+## (see: tg-bot branch)
+
