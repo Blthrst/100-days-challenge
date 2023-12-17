@@ -1,11 +1,6 @@
 {
-  "scripts": {
-    "start:back": "cd ./backend && yarn run start:dev",
-    "start:front": "cd ./frontend && yarn run start",
-    "start:all": "conc \"yarn run start:back\" \"yarn run start:front\""
-  },
   "dependencies": {
-    "concurrently": "^8.2.2",
-    "react-dom": "^18.2.0"
+    "dotenv": "^16.3.1",
+    "telegraf": "^4.15.3"
   }
 }
