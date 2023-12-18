@@ -204,3 +204,15 @@ RESULT: -
 
 ## (see: tg-bot branch)
 
+-----------------------------------------------------------------------------
+
+## 18TH DAY
+
+TIME SPENT: 1 HOUR
+
+THE MOST ALLOCATED TIME FOR: python learning
+
+RESULT: -
+
+## (see: py-learning branch)
+
