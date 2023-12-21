@@ -12,7 +12,18 @@ class Computer (Machinery):
     
     @vram.setter
     def vram(self, vram):
-        self.__vram = vram
+        try:
+            self.__vram = int(vram)
+        except ValueError as e:
+            print("Incorrect value: " + str(e))
+        finally:
+            print("Closing vram setter...")
 
     def info(self):
         print(f"CPU: {self.cpu}\nRAM: {self.ram}\nVRAM: {self.vram}\n\nPrice: {self.price}")
+
+
+comp = Computer("test", "test", 16000, 10)
+
+comp.vram = "e"
+
