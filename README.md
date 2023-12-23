@@ -256,7 +256,19 @@ RESULT: -
 
 ## 22TH DAY
 
-TIME SPENT: 1.5 HOUR
+TIME SPENT: 1 HOUR
+
+THE MOST ALLOCATED TIME FOR: python learning
+
+RESULT: -
+
+## (see: py-learning branch)
+
+-----------------------------------------------------------------------------
+
+## 23TH DAY
+
+TIME SPENT: 1 HOUR
 
 THE MOST ALLOCATED TIME FOR: python learning
 
