@@ -1,6 +1,8 @@
 from typing import Union
 from fastapi import FastAPI
+from fastapi.responses import FileResponse
 from dataclasses import dataclass
+from functions import calculate as calcFunc
 
 @dataclass
 class User:
@@ -18,6 +20,14 @@ def read_root():
 @app.get("/users")
 def read_users():
     return users
+
+@app.get("/index")
+def index():
+    return FileResponse("public/index.html")
+
+@app.get("/calculate/{first}/{operator}/{second}")
+def calculate(first: float, operator: str, second: float):
+    return calcFunc(first, operator, second)
 
 
 @app.get("/items/{item_id}")
