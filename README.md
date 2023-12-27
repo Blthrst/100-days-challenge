@@ -311,3 +311,15 @@ THE MOST ALLOCATED TIME FOR: python learning
 RESULT: -
 
 ## (see: py-learning branch)
+
+-----------------------------------------------------------------------------
+
+## 27TH DAY
+
+TIME SPENT: 2 HOURS
+
+THE MOST ALLOCATED TIME FOR: making tg bot using gramjs
+
+RESULT: -
+
+## (see: tg-bot branch)
