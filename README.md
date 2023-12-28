@@ -323,3 +323,15 @@ THE MOST ALLOCATED TIME FOR: making tg bot using gramjs
 RESULT: -
 
 ## (see: tg-bot branch)
+
+-----------------------------------------------------------------------------
+
+## 28TH DAY
+
+TIME SPENT: 1.5 HOUR
+
+THE MOST ALLOCATED TIME FOR: making tg userbot using gramjs
+
+RESULT: -
+
+## (see: tg-bot branch)
