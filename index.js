@@ -29,30 +29,32 @@ const stringSession = new StringSession(process.env.SESSION_STR_ORIGIN);
     const sender_id = sender.id.toString().replace("n", "")
 
     if (sender_id === process.env.MY_ID) {
-        const command = e.message.message
-        MyCommandsRouter(client, e.message.peerId.channelId.value.toString(), command)
+      const userId = e.message.peerId?.userId?.value
+      const channelId = e.message.peerId?.channelId?.value
+        const msg = e.message
+        await MyCommandsRouter(client, channelId ?? userId, msg)
     }
     
-    if (!e.isPrivate) {
-        if(e.message.peerId.channelId.value.toString().replace("n", "") === process.env.ZP_ID) {
+    // if (!e.isPrivate) {
+    //     if(e.message.peerId.channelId.value.toString().replace("n", "") === process.env.ZP_ID) {
 
-            const badArr = words.split(" ")
-            const randomWord = badArr[Math.floor(Math.random() * badArr.length)]
+    //         const badArr = words.split(" ")
+    //         const randomWord = badArr[Math.floor(Math.random() * badArr.length)]
 
-            if (sender_id !== process.env.MY_ID) {
-                if (sender_id == process.env.TARGET_ID)
-                     await client.sendMessage(process.env.ZP_ID, {
-                     message: `Дора ${randomWord}.`
-                })
-                else 
-                    await client.sendMessage(process.env.ZP_ID, {
-                     message: `${sender.firstName}, а ты знаешь, что Дора ${randomWord}?`
-                    })
-            }
+    //         if (sender_id !== process.env.MY_ID) {
+    //             if (sender_id == process.env.TARGET_ID)
+    //                  await client.sendMessage(process.env.ZP_ID, {
+    //                  message: `Дора ${randomWord}.`
+    //             })
+    //             else 
+    //                 await client.sendMessage(process.env.ZP_ID, {
+    //                  message: `${sender.firstName}, а ты знаешь, что Дора ${randomWord}?`
+    //                 })
+    //         }
                
-                console.log(sender_id)
-        }
-    }
+    //             console.log(sender_id)
+    //     }
+    // }
 
   }, new NewMessage({}))
 
